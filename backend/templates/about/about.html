@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <!-- add to bodyfor css: class="" -->
+    <h1>Projects</h1>
+    <ul>
+      {% for p in project %}
+      <li>{{p.title}}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
