@@ -5,12 +5,13 @@
     <title>Projects</title>
   </head>
   <body>
-    <!-- add to bodyfor css: class="" -->
+    <!-- add to body for css: class="" -->
     <h1>Projects</h1>
     <ul>
       {% for p in project %}
-      <li>{{p.title}}</li>
+      <li><a href="{{p.id}}">{{p.title}}</a></li>
       {% endfor %}
     </ul>
+    <a href="/projects/add">Add a project</a>
   </body>
 </html>

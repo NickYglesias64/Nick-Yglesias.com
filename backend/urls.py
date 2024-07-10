@@ -21,6 +21,8 @@ from backend import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
-    path('about/', views.about),
-    path('about/<int:id>', views.detail)
+    path('projects/', views.projects),
+    path('projects/<int:id>', views.detail),
+    path('projects/add', views.add),
+    path('projects/delete/<int:id>', views.delete)
 ]
